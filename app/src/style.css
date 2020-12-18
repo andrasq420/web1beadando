@@ -1,34 +1,37 @@
 .header__content {
-    background-color: green ;
+    background-color: #d6ed17ff ;
     font-size: 20px;
 }
 
 .header {
-    background-color: green ;
+    background-color: #d6ed17ff ;
     display: grid;
     flex-flow: row nowrap;
     height: 80px;
+    width: 100% ;
+    font-size: 45px;
     --color-search: #fff;
+    
 }
+
+body {
+    margin : 0;
+    padding : 0;
+    background-color: #d6ed17ff;    
+    
+}
+
+.welcome {
+    height : 100%;
+    width: 100%;
+    font-size: 35px;
+   
+    justify-content: space-evenly;
+    align-items: center;  
+}
+
 
 h1 {
     font-size: 45px;
 }
 
-li {
-    padding-left: 0;
-    margin-bottom: 0;
-    list-style: none;
-    
-}
-.Menusor {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    overflow: hidden;
-    background-color: #610303;
-  }
-  
-  li {
-    float: left;
-  }

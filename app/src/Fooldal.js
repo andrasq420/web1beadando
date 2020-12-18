@@ -10,9 +10,23 @@ const Fooldal = () => {
     width: 500px ;
     height: 350px ;
     `
-}
+    }
+    
     />
+    
+
+    <div class = "welcome" 
+    css= {css`
+    text-align: center;
+    padding: 5px;
+ 
+    `
+    }
+    >
+        
     Üdv a Premier League totó oldalon
+    </div>
+    
     
     </div>
     )

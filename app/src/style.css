@@ -27,7 +27,9 @@ body {
     font-size: 35px;
    
     justify-content: space-evenly;
-    align-items: center;  
+    align-items: center;
+    text-align: center ;
+    
 }
 
 

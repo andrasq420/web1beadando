@@ -24,7 +24,7 @@ const Fooldal = () => {
     }
     >
         
-    Üdv a Premier League totó oldalon
+    Üdv a magyar Premier League oldalon
     </div>
     
     

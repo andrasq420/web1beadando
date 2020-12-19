@@ -20,7 +20,7 @@ const Header = () => {
 
            
             <Link exact to ="/">Főoldal</Link>
-            <Link exact to = "/tippek">Tippek</Link>
+            <Link exact to = "/adatok">Adatok</Link>
             <Link exact to = "/eredmeny">Eredmények</Link>
         </Container>
     )

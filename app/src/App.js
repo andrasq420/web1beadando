@@ -5,10 +5,10 @@ import {css} from "styled-components/macro"
 
 import Eredmeny from "./Eredmeny"
 import Fooldal from "./Fooldal"
-import Tippek from "./Tippek"
+import Adatok from "./Adatok"
 
 import Header from "./Header"
-
+import getData from "./getData"
 
 import './style.css' ;
 
@@ -30,33 +30,36 @@ const App = () => {
         >
         </img>
          Totó
-        </div>  
+        </div>
+        
         </header>
 
         <div class = "header__content">
           
       
         <Header>
+         
         </Header>
 
         <Switch>
               <Route  exact= {true} path= "/">
                 <Fooldal class = "header__content"/>
               </Route>
-              <Route path = "/tippek">
-                <Tippek />
+              <Route path = "/adatok">
+                <Adatok />
               </Route>
               <Route path = "/eredmeny">
                 <Eredmeny />
               </Route>
 
             </Switch>
+            {getData()} 
             </div>
 
         <div>
         </div>
         
-      
+            
     
     </body>
   );

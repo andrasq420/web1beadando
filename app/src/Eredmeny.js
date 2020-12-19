@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from "react";
 import axios from 'axios';
+import {css} from "styled-components/macro"
 
 
 export default function Eredmeny() {
@@ -55,7 +56,9 @@ function Meccs(i) {
 
 
 return(
-    <div>
+    <div css= {css`
+    text-align: center;
+    `}>
         <h1>
             <button onClick = {prev}>Előző hét</button>
             {data[index].round}
@@ -63,7 +66,7 @@ return(
         </h1>
 
         <h3>
-            <table>
+            <table class ="center">
                 <tr><td>{Meccs(index)}</td>
                     <td>
                     {checkForData(index)}
@@ -77,7 +80,7 @@ return(
                     </td>
                 </tr>
                 <tr> 
-                    <td>{Meccs(index)}
+                    <td>{data[index+2].team1} - {data[index+2].team2}
                     </td>
                     <td>
                     {checkForData(index+2)}

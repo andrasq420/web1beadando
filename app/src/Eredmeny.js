@@ -2,7 +2,7 @@ import React, { useContext, useEffect, useState, createContext } from "react";
 import axios from 'axios';
 import {css} from "styled-components/macro"
 import {FirstName , LastName} from "./Context"
-import Name from "./Context"
+import GoalGuy from "./Context"
 
 
 export default function Eredmeny() {
@@ -69,11 +69,12 @@ function Meccs(i) {
 
 
 
+
 return(
     <div css= {css`
     text-align: center;
     `}>
- 
+        
         
         <h1>
            
@@ -153,12 +154,12 @@ return(
                     </td>
                 </tr>
             </table>
+            
         </h3>
 
         
 
         
-
 
     </div>
     

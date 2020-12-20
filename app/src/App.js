@@ -7,7 +7,7 @@ import Eredmeny from "./Eredmeny"
 import Fooldal from "./Fooldal"
 import Adatok from "./Adatok"
 import Counter from "./ageButton"
-
+import GoalGuy from "./Context"
 
 import Header from "./Header"
 import getData from "./getData"
@@ -26,6 +26,7 @@ const App = () => {
 
 
   return (
+    <GoalGuy.Provider value = "Mohamed Salah">
     <body>
       
         <header class = "header">
@@ -74,7 +75,9 @@ const App = () => {
             
             
     </body>
+    </GoalGuy.Provider>
   );
+  
 }
 
 export default App;

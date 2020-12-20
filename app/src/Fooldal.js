@@ -1,9 +1,15 @@
-import React from "react";
+import React, {useContext} from "react";
 import {css} from "styled-components/macro"
 
 import Counter from "./ageButton"
+import GoalGuy from "./Context"
+
+
 
 const Fooldal = () => {
+
+    const moS = useContext(GoalGuy);
+
     return (
     <div class = "welcome">
         
@@ -30,6 +36,8 @@ const Fooldal = () => {
     </div>
     
         {Counter()}
+        <div> Gólkirály :{moS}</div>
+        
     </div>
     )
 }

@@ -42,3 +42,14 @@ h1 {
     margin-right: auto;
   }
 
+
+  .dark {
+    background-color: #404042;
+    color: gray;
+  }
+
+  .light {
+    background-color: #404042;
+    color: gray;
+  }
+

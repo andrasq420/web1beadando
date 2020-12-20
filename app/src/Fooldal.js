@@ -1,6 +1,8 @@
 import React from "react";
 import {css} from "styled-components/macro"
 
+import Counter from "./ageButton"
+
 const Fooldal = () => {
     return (
     <div class = "welcome">
@@ -27,7 +29,7 @@ const Fooldal = () => {
     Üdv a magyar Premier League oldalon
     </div>
     
-    
+        {Counter()}
     </div>
     )
 }

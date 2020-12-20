@@ -1,3 +1,19 @@
-import {createContext} from "react"
+import React, {createContext} from "react"
 
-export const Context = createContext(null);
+
+const FirstName = createContext();
+const LastName = createContext();
+
+const Name = () => {
+    return (
+        <>
+        <FirstName.Provider value = {"Mohamed"}>
+            <LastName.Provider value = {"Salah"}>
+            </LastName.Provider>
+        </FirstName.Provider>
+        </>
+    );
+};
+
+export default Name
+export {FirstName,LastName}

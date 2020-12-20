@@ -1,4 +1,4 @@
-import React, { useEffect, useState} from "react";
+import React, { useEffect, useState, useReducer} from "react";
 import axios from "axios" 
 import {Redirect, Route, Switch } from "react-router-dom" ;
 import {css} from "styled-components/macro"
@@ -6,6 +6,8 @@ import {css} from "styled-components/macro"
 import Eredmeny from "./Eredmeny"
 import Fooldal from "./Fooldal"
 import Adatok from "./Adatok"
+import Counter from "./ageButton"
+
 
 import Header from "./Header"
 import getData from "./getData"
@@ -13,7 +15,16 @@ import getData from "./getData"
 import './style.css' ;
 
 
+
 const App = () => {
+
+
+
+
+
+
+
+
   return (
     <body>
       
@@ -29,7 +40,7 @@ const App = () => {
             alt = "logo"
         >
         </img>
-         Totó
+         Hungarian Premier League
         </div>
         
         </header>
@@ -53,14 +64,15 @@ const App = () => {
               </Route>
 
             </Switch>
-            {getData()} 
+            {getData()}
+            
             </div>
 
         <div>
         </div>
         
             
-    
+            
     </body>
   );
 }

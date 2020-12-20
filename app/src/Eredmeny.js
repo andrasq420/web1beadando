@@ -1,12 +1,15 @@
-import React, { useEffect, useState } from "react";
+import React, { useContext, useEffect, useState, createContext } from "react";
 import axios from 'axios';
 import {css} from "styled-components/macro"
+import {FirstName , LastName} from "./Context"
+import Name from "./Context"
 
 
 export default function Eredmeny() {
 
 const [data, setData] = useState([]);
 const [index, setIndex] = useState(0);
+
 
 
 
@@ -19,6 +22,17 @@ useEffect(() => {
     }
     load()
 }, [])
+
+const date = createContext();
+
+const Dates = () => {
+ return (
+    <date.Provider value = {""}
+    ></date.Provider>
+ )
+}
+
+
 
 const prev = () => {
     if( index >= 10){
@@ -59,7 +73,10 @@ return(
     <div css= {css`
     text-align: center;
     `}>
+ 
+        
         <h1>
+           
             <button onClick = {prev}>Előző hét</button>
             {data[index].round}
             <button onClick = {next} >Következő hét</button>
@@ -137,6 +154,8 @@ return(
                 </tr>
             </table>
         </h3>
+
+        
 
         
 

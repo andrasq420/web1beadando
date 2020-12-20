@@ -1,7 +1,9 @@
-import React, { useState,useEffect } from "react";
+import React, {  useState,useEffect, useReducer } from "react";
 import axios from "axios";
 
-import {Context} from "./Context";
+
+import Counter from "./ageButton";
+
 
 
 export default function  Adatok() {
@@ -33,7 +35,7 @@ export default function  Adatok() {
     }
 
     
-    
+
 
     function fillStorage() {
         var x = document.getElementById("teams");
@@ -44,9 +46,11 @@ export default function  Adatok() {
   
     return (
         <div>
-     
+            
      <form>
          Név: <input id ="nev"placeholder = "A te neved" onChange = {changeName} />
+        
+         
         <label for="teams">Kedvenc csapat: </label>
         <select name="teams" id="teams">
         
@@ -79,9 +83,7 @@ export default function  Adatok() {
         </form>
         
          
-     <Context.Provider value = {{value, setValue}}>
-     
-     </Context.Provider>
+    
      </div>
  )
 
